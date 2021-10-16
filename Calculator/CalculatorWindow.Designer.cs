@@ -48,6 +48,8 @@ namespace Calculator
             this.ClearButton = new System.Windows.Forms.Button();
             this.InputAndAnswerTextBox = new System.Windows.Forms.TextBox();
             this.ChangePositiveNegativeButton = new System.Windows.Forms.Button();
+            this.SquareButton = new System.Windows.Forms.Button();
+            this.SquareRootButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Number1
@@ -184,7 +186,7 @@ namespace Calculator
             this.Number0.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Number0.Location = new System.Drawing.Point(12, 219);
             this.Number0.Name = "Number0";
-            this.Number0.Size = new System.Drawing.Size(102, 37);
+            this.Number0.Size = new System.Drawing.Size(48, 37);
             this.Number0.TabIndex = 9;
             this.Number0.Text = "0";
             this.Number0.UseVisualStyleBackColor = false;
@@ -282,9 +284,9 @@ namespace Calculator
             this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClearButton.Location = new System.Drawing.Point(12, 47);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(102, 37);
+            this.ClearButton.Size = new System.Drawing.Size(48, 37);
             this.ClearButton.TabIndex = 16;
-            this.ClearButton.Text = "Clear";
+            this.ClearButton.Text = "C";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
@@ -304,7 +306,7 @@ namespace Calculator
             this.ChangePositiveNegativeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChangePositiveNegativeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ChangePositiveNegativeButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ChangePositiveNegativeButton.Location = new System.Drawing.Point(120, 47);
+            this.ChangePositiveNegativeButton.Location = new System.Drawing.Point(66, 219);
             this.ChangePositiveNegativeButton.Name = "ChangePositiveNegativeButton";
             this.ChangePositiveNegativeButton.Size = new System.Drawing.Size(48, 37);
             this.ChangePositiveNegativeButton.TabIndex = 18;
@@ -312,12 +314,42 @@ namespace Calculator
             this.ChangePositiveNegativeButton.UseVisualStyleBackColor = false;
             this.ChangePositiveNegativeButton.Click += new System.EventHandler(this.ChangePositiveNegativeButton_Click);
             // 
+            // SquareButton
+            // 
+            this.SquareButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SquareButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SquareButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SquareButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SquareButton.Location = new System.Drawing.Point(120, 47);
+            this.SquareButton.Name = "SquareButton";
+            this.SquareButton.Size = new System.Drawing.Size(48, 37);
+            this.SquareButton.TabIndex = 19;
+            this.SquareButton.Text = "x^2";
+            this.SquareButton.UseVisualStyleBackColor = false;
+            this.SquareButton.Click += new System.EventHandler(this.SquareButton_Click);
+            // 
+            // SquareRootButton
+            // 
+            this.SquareRootButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SquareRootButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SquareRootButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SquareRootButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SquareRootButton.Location = new System.Drawing.Point(66, 47);
+            this.SquareRootButton.Name = "SquareRootButton";
+            this.SquareRootButton.Size = new System.Drawing.Size(48, 37);
+            this.SquareRootButton.TabIndex = 20;
+            this.SquareRootButton.Text = "Sqrt";
+            this.SquareRootButton.UseVisualStyleBackColor = false;
+            this.SquareRootButton.Click += new System.EventHandler(this.SquareRootButton_Click);
+            // 
             // CalculatorWindow
             // 
             this.AcceptButton = this.EqualsButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 267);
+            this.ClientSize = new System.Drawing.Size(235, 267);
+            this.Controls.Add(this.SquareRootButton);
+            this.Controls.Add(this.SquareButton);
             this.Controls.Add(this.ChangePositiveNegativeButton);
             this.Controls.Add(this.InputAndAnswerTextBox);
             this.Controls.Add(this.ClearButton);
@@ -367,6 +399,8 @@ namespace Calculator
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.TextBox InputAndAnswerTextBox;
         private System.Windows.Forms.Button ChangePositiveNegativeButton;
+        private System.Windows.Forms.Button SquareButton;
+        private System.Windows.Forms.Button SquareRootButton;
     }
 }
 

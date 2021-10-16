@@ -111,6 +111,28 @@ namespace Calculator
             _whatToDo = 3;
             InputAndAnswerTextBox.Clear();
         }
+
+        private void ChangePositiveNegativeButton_Click(object sender, EventArgs e)
+        {
+            var tempNum = double.Parse(InputAndAnswerTextBox.Text);
+            tempNum *= -1;
+            InputAndAnswerTextBox.Text = tempNum.ToString();
+        }
+
+        private void SquareButton_Click(object sender, EventArgs e)
+        {
+            _number1 = double.Parse(InputAndAnswerTextBox.Text);
+            _result = Square(_number1);
+            InputAndAnswerTextBox.Text = _result.ToString();
+        }
+
+        private void SquareRootButton_Click(object sender, EventArgs e)
+        {
+            _number1 = double.Parse(InputAndAnswerTextBox.Text);
+            _result = SquareRoot(_number1);
+            InputAndAnswerTextBox.Text = _result.ToString();
+        }
+
         private void EqualsButton_Click(object sender, EventArgs e)
         {
             if (InputAndAnswerTextBox.Text != "")
@@ -128,13 +150,6 @@ namespace Calculator
             };
 
             InputAndAnswerTextBox.Text = _result.ToString();
-        }
-
-        private void ChangePositiveNegativeButton_Click(object sender, EventArgs e)
-        {
-            var tempNum = double.Parse(InputAndAnswerTextBox.Text);
-            tempNum *= -1;
-            InputAndAnswerTextBox.Text = tempNum.ToString();
         }
     }
 }
