@@ -47,6 +47,7 @@ namespace Calculator
             this.CommaButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.InputAndAnswerTextBox = new System.Windows.Forms.TextBox();
+            this.ChangePositiveNegativeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Number1
@@ -55,7 +56,7 @@ namespace Calculator
             this.Number1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Number1.Location = new System.Drawing.Point(12, 90);
+            this.Number1.Location = new System.Drawing.Point(12, 176);
             this.Number1.Name = "Number1";
             this.Number1.Size = new System.Drawing.Size(48, 37);
             this.Number1.TabIndex = 0;
@@ -69,7 +70,7 @@ namespace Calculator
             this.Number2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Number2.Location = new System.Drawing.Point(66, 90);
+            this.Number2.Location = new System.Drawing.Point(66, 176);
             this.Number2.Name = "Number2";
             this.Number2.Size = new System.Drawing.Size(48, 37);
             this.Number2.TabIndex = 1;
@@ -83,7 +84,7 @@ namespace Calculator
             this.Number3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Number3.Location = new System.Drawing.Point(120, 90);
+            this.Number3.Location = new System.Drawing.Point(120, 176);
             this.Number3.Name = "Number3";
             this.Number3.Size = new System.Drawing.Size(48, 37);
             this.Number3.TabIndex = 2;
@@ -139,7 +140,7 @@ namespace Calculator
             this.Number7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Number7.Location = new System.Drawing.Point(12, 176);
+            this.Number7.Location = new System.Drawing.Point(12, 90);
             this.Number7.Name = "Number7";
             this.Number7.Size = new System.Drawing.Size(48, 37);
             this.Number7.TabIndex = 6;
@@ -153,7 +154,7 @@ namespace Calculator
             this.Number8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Number8.Location = new System.Drawing.Point(66, 176);
+            this.Number8.Location = new System.Drawing.Point(66, 90);
             this.Number8.Name = "Number8";
             this.Number8.Size = new System.Drawing.Size(48, 37);
             this.Number8.TabIndex = 7;
@@ -167,7 +168,7 @@ namespace Calculator
             this.Number9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Number9.Location = new System.Drawing.Point(120, 176);
+            this.Number9.Location = new System.Drawing.Point(120, 90);
             this.Number9.Name = "Number9";
             this.Number9.Size = new System.Drawing.Size(48, 37);
             this.Number9.TabIndex = 8;
@@ -281,7 +282,7 @@ namespace Calculator
             this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClearButton.Location = new System.Drawing.Point(12, 47);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(156, 37);
+            this.ClearButton.Size = new System.Drawing.Size(102, 37);
             this.ClearButton.TabIndex = 16;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
@@ -297,12 +298,27 @@ namespace Calculator
             this.InputAndAnswerTextBox.TabIndex = 17;
             this.InputAndAnswerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // ChangePositiveNegativeButton
+            // 
+            this.ChangePositiveNegativeButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ChangePositiveNegativeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ChangePositiveNegativeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ChangePositiveNegativeButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ChangePositiveNegativeButton.Location = new System.Drawing.Point(120, 47);
+            this.ChangePositiveNegativeButton.Name = "ChangePositiveNegativeButton";
+            this.ChangePositiveNegativeButton.Size = new System.Drawing.Size(48, 37);
+            this.ChangePositiveNegativeButton.TabIndex = 18;
+            this.ChangePositiveNegativeButton.Text = "+/-";
+            this.ChangePositiveNegativeButton.UseVisualStyleBackColor = false;
+            this.ChangePositiveNegativeButton.Click += new System.EventHandler(this.ChangePositiveNegativeButton_Click);
+            // 
             // CalculatorWindow
             // 
             this.AcceptButton = this.EqualsButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 269);
+            this.ClientSize = new System.Drawing.Size(231, 267);
+            this.Controls.Add(this.ChangePositiveNegativeButton);
             this.Controls.Add(this.InputAndAnswerTextBox);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.CommaButton);
@@ -350,6 +366,7 @@ namespace Calculator
         private System.Windows.Forms.Button CommaButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.TextBox InputAndAnswerTextBox;
+        private System.Windows.Forms.Button ChangePositiveNegativeButton;
     }
 }
 

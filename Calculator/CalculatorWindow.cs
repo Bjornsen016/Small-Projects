@@ -130,5 +130,11 @@ namespace Calculator
             InputAndAnswerTextBox.Text = _result.ToString();
         }
 
+        private void ChangePositiveNegativeButton_Click(object sender, EventArgs e)
+        {
+            var tempNum = double.Parse(InputAndAnswerTextBox.Text);
+            tempNum *= -1;
+            InputAndAnswerTextBox.Text = tempNum.ToString();
+        }
     }
 }
