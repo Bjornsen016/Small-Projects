@@ -52,7 +52,7 @@ namespace Calculator
             // 
             // Number1
             // 
-            this.Number1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -66,7 +66,7 @@ namespace Calculator
             // 
             // Number2
             // 
-            this.Number2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -80,7 +80,7 @@ namespace Calculator
             // 
             // Number3
             // 
-            this.Number3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -94,7 +94,7 @@ namespace Calculator
             // 
             // Number4
             // 
-            this.Number4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -108,7 +108,7 @@ namespace Calculator
             // 
             // Number5
             // 
-            this.Number5.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -122,7 +122,7 @@ namespace Calculator
             // 
             // Number6
             // 
-            this.Number6.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -136,7 +136,7 @@ namespace Calculator
             // 
             // Number7
             // 
-            this.Number7.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -150,7 +150,7 @@ namespace Calculator
             // 
             // Number8
             // 
-            this.Number8.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -164,7 +164,7 @@ namespace Calculator
             // 
             // Number9
             // 
-            this.Number9.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -178,7 +178,7 @@ namespace Calculator
             // 
             // Number0
             // 
-            this.Number0.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Number0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Number0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Number0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Number0.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -192,7 +192,7 @@ namespace Calculator
             // 
             // AddButton
             // 
-            this.AddButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -206,7 +206,7 @@ namespace Calculator
             // 
             // SubtractButton
             // 
-            this.SubtractButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.SubtractButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.SubtractButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SubtractButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SubtractButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -220,7 +220,7 @@ namespace Calculator
             // 
             // MultiplyButton
             // 
-            this.MultiplyButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.MultiplyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.MultiplyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MultiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MultiplyButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -234,7 +234,7 @@ namespace Calculator
             // 
             // EqualsButton
             // 
-            this.EqualsButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.EqualsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.EqualsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EqualsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EqualsButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -248,7 +248,7 @@ namespace Calculator
             // 
             // DivideButton
             // 
-            this.DivideButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.DivideButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.DivideButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DivideButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DivideButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -262,7 +262,7 @@ namespace Calculator
             // 
             // CommaButton
             // 
-            this.CommaButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.CommaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CommaButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CommaButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CommaButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -276,7 +276,7 @@ namespace Calculator
             // 
             // ClearButton
             // 
-            this.ClearButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClearButton.BackColor = System.Drawing.Color.Aqua;
             this.ClearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -300,7 +300,7 @@ namespace Calculator
             // 
             // ChangePositiveNegativeButton
             // 
-            this.ChangePositiveNegativeButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ChangePositiveNegativeButton.BackColor = System.Drawing.Color.Aqua;
             this.ChangePositiveNegativeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChangePositiveNegativeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ChangePositiveNegativeButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
