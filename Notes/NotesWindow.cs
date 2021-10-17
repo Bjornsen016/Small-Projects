@@ -67,5 +67,26 @@ namespace Notes
 
             ListBoxSavedNotes.DataSource = content;
         }
+
+        private void NoteBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter && ModifierKeys == Keys.Shift)
+            {
+                if (NoteBox.Text == "") return;
+
+                if (_changingNote)
+                {
+                    int index = ListBoxSavedNotes.SelectedIndex;
+                    _notes.NoteList[index] = NoteBox.Text;
+                    _changingNote = false;
+                }
+                else _notes.CreateNote(NoteBox.Text);
+
+                NoteBox.Clear();
+                _notes.Save();
+                RefreshDisplayedNotes();
+            }
+            
+        }
     }
 }

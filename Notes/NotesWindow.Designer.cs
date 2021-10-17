@@ -49,6 +49,7 @@ namespace Notes
             this.NoteBox.Size = new System.Drawing.Size(778, 539);
             this.NoteBox.TabIndex = 0;
             this.NoteBox.Text = "";
+            this.NoteBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NoteBox_KeyPress);
             // 
             // SaveButton
             // 
@@ -116,6 +117,7 @@ namespace Notes
             this.ListBoxSavedNotes.Name = "ListBoxSavedNotes";
             this.ListBoxSavedNotes.Size = new System.Drawing.Size(209, 425);
             this.ListBoxSavedNotes.TabIndex = 4;
+            this.ListBoxSavedNotes.DoubleClick += new System.EventHandler(this.LoadButton_Click);
             // 
             // groupBox1
             // 
