@@ -49,50 +49,60 @@ namespace Notes
             this.NoteBox.Size = new System.Drawing.Size(778, 539);
             this.NoteBox.TabIndex = 0;
             this.NoteBox.Text = "";
+            this.NoteBox.Enter += new System.EventHandler(this.SaveButton_Click);
             // 
             // SaveButton
             // 
             this.SaveButton.AccessibleRole = System.Windows.Forms.AccessibleRole.Application;
             this.SaveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SaveButton.BackColor = System.Drawing.Color.Gold;
             this.SaveButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SaveButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.Khaki;
+            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SaveButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SaveButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.SaveButton.Location = new System.Drawing.Point(851, 450);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(81, 28);
             this.SaveButton.TabIndex = 1;
             this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // LoadButton
             // 
             this.LoadButton.AccessibleRole = System.Windows.Forms.AccessibleRole.Application;
             this.LoadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LoadButton.BackColor = System.Drawing.Color.Gold;
             this.LoadButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoadButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.LoadButton.FlatAppearance.BorderColor = System.Drawing.Color.Khaki;
+            this.LoadButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.LoadButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LoadButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LoadButton.Location = new System.Drawing.Point(851, 484);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(81, 28);
             this.LoadButton.TabIndex = 2;
             this.LoadButton.Text = "Load";
-            this.LoadButton.UseVisualStyleBackColor = true;
+            this.LoadButton.UseVisualStyleBackColor = false;
             this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
             // DeleteButton
             // 
             this.DeleteButton.AccessibleRole = System.Windows.Forms.AccessibleRole.Application;
             this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DeleteButton.BackColor = System.Drawing.Color.Gold;
             this.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DeleteButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.DeleteButton.FlatAppearance.BorderColor = System.Drawing.Color.Khaki;
+            this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.DeleteButton.Location = new System.Drawing.Point(851, 518);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(81, 28);
             this.DeleteButton.TabIndex = 3;
             this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.UseVisualStyleBackColor = false;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // ListBoxSavedNotes
@@ -112,6 +122,8 @@ namespace Notes
             // 
             this.groupBox1.AutoSize = true;
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox1.BackColor = System.Drawing.Color.Cyan;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.NoteBox);
             this.groupBox1.Controls.Add(this.ListBoxSavedNotes);
             this.groupBox1.Controls.Add(this.SaveButton);
@@ -123,11 +135,13 @@ namespace Notes
             this.groupBox1.Size = new System.Drawing.Size(999, 561);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Notes";
             // 
             // NotesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(999, 561);
             this.Controls.Add(this.groupBox1);
             this.MinimumSize = new System.Drawing.Size(1015, 600);
