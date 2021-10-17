@@ -68,5 +68,43 @@ namespace Tests
 
             Assert.Equal(releaseDate, movie.ReleaseDate);
         }
+
+        [Theory]
+        [InlineData("Tom Cruise")]
+        [InlineData("Chris Pine")]
+        [InlineData("Michael Jackson")]
+        [InlineData("Rowan Aktinson")]
+        public void Test_Actors(string actor)
+        {
+            Movie movie = new Movie("Mission Impossible", DateTime.Today);
+
+            Assert.Empty(movie.Actors);
+
+            movie.Actors.Add(actor);
+            Assert.Single(movie.Actors);
+        }
+
+        [Theory]
+        [InlineData("Comedy", true)]
+        [InlineData("Action", true)]
+        [InlineData("Boost", false)]
+        [InlineData("acction", false)]
+        [InlineData("Animated", true)]
+        public void Test_Genres(string genre, bool valid)
+        {
+            Movie movie = new Movie("Mission Impossible", DateTime.Today)
+            {
+                Genre = genre
+            };
+
+            if (valid)
+            {
+                Assert.NotNull(movie.Genre);
+            }
+            else
+            {
+                Assert.Null(movie.Genre);
+            }
+        }
     }
 }
