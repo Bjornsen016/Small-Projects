@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Notes
@@ -14,6 +9,7 @@ namespace Notes
     {
         private readonly Notes _notes;
         private bool _changingNote;
+
         public NotesWindow()
         {
             InitializeComponent();
@@ -33,7 +29,7 @@ namespace Notes
                 _changingNote = false;
             }
             else _notes.CreateNote(NoteBox.Text);
-            
+
             NoteBox.Clear();
             _notes.Save();
             RefreshDisplayedNotes();
@@ -86,7 +82,6 @@ namespace Notes
                 _notes.Save();
                 RefreshDisplayedNotes();
             }
-            
         }
     }
 }
