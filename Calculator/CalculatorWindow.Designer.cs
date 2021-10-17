@@ -64,7 +64,7 @@ namespace Calculator
             this.Number1.TabIndex = 0;
             this.Number1.Text = "1";
             this.Number1.UseVisualStyleBackColor = false;
-            this.Number1.Click += new System.EventHandler(this.Number1_Click);
+            this.Number1.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number2
             // 
@@ -78,7 +78,7 @@ namespace Calculator
             this.Number2.TabIndex = 1;
             this.Number2.Text = "2";
             this.Number2.UseVisualStyleBackColor = false;
-            this.Number2.Click += new System.EventHandler(this.Number2_Click);
+            this.Number2.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number3
             // 
@@ -92,7 +92,7 @@ namespace Calculator
             this.Number3.TabIndex = 2;
             this.Number3.Text = "3";
             this.Number3.UseVisualStyleBackColor = false;
-            this.Number3.Click += new System.EventHandler(this.Number3_Click);
+            this.Number3.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number4
             // 
@@ -106,7 +106,7 @@ namespace Calculator
             this.Number4.TabIndex = 3;
             this.Number4.Text = "4";
             this.Number4.UseVisualStyleBackColor = false;
-            this.Number4.Click += new System.EventHandler(this.Number4_Click);
+            this.Number4.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number5
             // 
@@ -120,7 +120,7 @@ namespace Calculator
             this.Number5.TabIndex = 4;
             this.Number5.Text = "5";
             this.Number5.UseVisualStyleBackColor = false;
-            this.Number5.Click += new System.EventHandler(this.Number5_Click);
+            this.Number5.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number6
             // 
@@ -134,7 +134,7 @@ namespace Calculator
             this.Number6.TabIndex = 5;
             this.Number6.Text = "6";
             this.Number6.UseVisualStyleBackColor = false;
-            this.Number6.Click += new System.EventHandler(this.Number6_Click);
+            this.Number6.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number7
             // 
@@ -148,7 +148,7 @@ namespace Calculator
             this.Number7.TabIndex = 6;
             this.Number7.Text = "7";
             this.Number7.UseVisualStyleBackColor = false;
-            this.Number7.Click += new System.EventHandler(this.Number7_Click);
+            this.Number7.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number8
             // 
@@ -162,7 +162,7 @@ namespace Calculator
             this.Number8.TabIndex = 7;
             this.Number8.Text = "8";
             this.Number8.UseVisualStyleBackColor = false;
-            this.Number8.Click += new System.EventHandler(this.Number8_Click);
+            this.Number8.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number9
             // 
@@ -176,7 +176,7 @@ namespace Calculator
             this.Number9.TabIndex = 8;
             this.Number9.Text = "9";
             this.Number9.UseVisualStyleBackColor = false;
-            this.Number9.Click += new System.EventHandler(this.Number9_Click);
+            this.Number9.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // Number0
             // 
@@ -190,10 +190,11 @@ namespace Calculator
             this.Number0.TabIndex = 9;
             this.Number0.Text = "0";
             this.Number0.UseVisualStyleBackColor = false;
-            this.Number0.Click += new System.EventHandler(this.Number0_Click);
+            this.Number0.Click += new System.EventHandler(this.NumberButton_Click);
             // 
             // AddButton
             // 
+            this.AddButton.AccessibleName = "Add";
             this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -204,10 +205,11 @@ namespace Calculator
             this.AddButton.TabIndex = 10;
             this.AddButton.Text = "+";
             this.AddButton.UseVisualStyleBackColor = false;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            this.AddButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // SubtractButton
             // 
+            this.SubtractButton.AccessibleName = "Subtract";
             this.SubtractButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.SubtractButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SubtractButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -218,10 +220,11 @@ namespace Calculator
             this.SubtractButton.TabIndex = 11;
             this.SubtractButton.Text = "-";
             this.SubtractButton.UseVisualStyleBackColor = false;
-            this.SubtractButton.Click += new System.EventHandler(this.SubtractButton_Click);
+            this.SubtractButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // MultiplyButton
             // 
+            this.MultiplyButton.AccessibleName = "Multiply";
             this.MultiplyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.MultiplyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MultiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -232,7 +235,7 @@ namespace Calculator
             this.MultiplyButton.TabIndex = 12;
             this.MultiplyButton.Text = "*";
             this.MultiplyButton.UseVisualStyleBackColor = false;
-            this.MultiplyButton.Click += new System.EventHandler(this.MultiplyButton_Click);
+            this.MultiplyButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // EqualsButton
             // 
@@ -250,6 +253,7 @@ namespace Calculator
             // 
             // DivideButton
             // 
+            this.DivideButton.AccessibleName = "Divide";
             this.DivideButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.DivideButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DivideButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -260,7 +264,7 @@ namespace Calculator
             this.DivideButton.TabIndex = 14;
             this.DivideButton.Text = "/";
             this.DivideButton.UseVisualStyleBackColor = false;
-            this.DivideButton.Click += new System.EventHandler(this.DivideButton_Click);
+            this.DivideButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // CommaButton
             // 
@@ -316,6 +320,7 @@ namespace Calculator
             // 
             // SquareButton
             // 
+            this.SquareButton.AccessibleName = "Square";
             this.SquareButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.SquareButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SquareButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -326,10 +331,11 @@ namespace Calculator
             this.SquareButton.TabIndex = 19;
             this.SquareButton.Text = "x^2";
             this.SquareButton.UseVisualStyleBackColor = false;
-            this.SquareButton.Click += new System.EventHandler(this.SquareButton_Click);
+            this.SquareButton.Click += new System.EventHandler(this.DirectCalculateButton_Click);
             // 
             // SquareRootButton
             // 
+            this.SquareRootButton.AccessibleName = "SquareRoot";
             this.SquareRootButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.SquareRootButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SquareRootButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -340,7 +346,7 @@ namespace Calculator
             this.SquareRootButton.TabIndex = 20;
             this.SquareRootButton.Text = "Sqrt";
             this.SquareRootButton.UseVisualStyleBackColor = false;
-            this.SquareRootButton.Click += new System.EventHandler(this.SquareRootButton_Click);
+            this.SquareRootButton.Click += new System.EventHandler(this.DirectCalculateButton_Click);
             // 
             // CalculatorWindow
             // 
