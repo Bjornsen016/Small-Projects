@@ -24,10 +24,7 @@ namespace Notes
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (NoteBox.Text == "")
-            {
-                return;
-            }
+            if (NoteBox.Text == "") return;
 
             if (_changingNote)
             {
@@ -35,10 +32,8 @@ namespace Notes
                 _notes.NoteList[index] = NoteBox.Text;
                 _changingNote = false;
             }
-            else
-            {
-                _notes.CreateNote(NoteBox.Text);
-            }
+            else _notes.CreateNote(NoteBox.Text);
+            
             NoteBox.Clear();
             _notes.Save();
             RefreshDisplayedNotes();
@@ -47,6 +42,7 @@ namespace Notes
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             int index = ListBoxSavedNotes.SelectedIndex;
+            _changingNote = false;
             if (index >= 0)
             {
                 _notes.NoteList.RemoveAt(index);

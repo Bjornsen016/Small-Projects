@@ -49,7 +49,6 @@ namespace Notes
             this.NoteBox.Size = new System.Drawing.Size(778, 539);
             this.NoteBox.TabIndex = 0;
             this.NoteBox.Text = "";
-            this.NoteBox.Enter += new System.EventHandler(this.SaveButton_Click);
             // 
             // SaveButton
             // 
