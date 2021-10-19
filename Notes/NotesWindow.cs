@@ -39,22 +39,22 @@ namespace Notes
         {
             int index = ListBoxSavedNotes.SelectedIndex;
             _changingNote = false;
-            if (index >= 0)
-            {
-                _notes.NoteList.RemoveAt(index);
-                _notes.Save();
-                RefreshDisplayedNotes();
-            }
+
+            if (index < 0) return;
+
+            _notes.NoteList.RemoveAt(index);
+            _notes.Save();
+            RefreshDisplayedNotes();
         }
 
         private void LoadButton_Click(object sender, EventArgs e)
         {
             int index = ListBoxSavedNotes.SelectedIndex;
-            if (_notes.NoteList.Count != 0)
-            {
-                NoteBox.Text = _notes.NoteList[index];
-                _changingNote = true;
-            }
+
+            if (_notes.NoteList.Count == 0) return;
+
+            NoteBox.Text = _notes.NoteList[index];
+            _changingNote = true;
         }
 
         private void RefreshDisplayedNotes()

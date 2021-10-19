@@ -10,6 +10,7 @@ namespace MovieDatabase
     public class Movie
     {
         public string Name { get; }
+        public string Synopsis { get; set; }
         private string _genre;
         public string Genre
         {
@@ -33,13 +34,12 @@ namespace MovieDatabase
         public string Publisher { get; set; }
         public DateTime ReleaseDate { get; }
         public bool Watched { get; set; }
-        public List<string> Actors;
+        public List<string> Actors = new();
 
         public Movie(string name, DateTime releaseDate)
         {
             Name = name;
             ReleaseDate = releaseDate;
-            Actors = new();
         }
     }
 }

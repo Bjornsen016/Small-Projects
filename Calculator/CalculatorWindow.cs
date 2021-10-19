@@ -44,41 +44,40 @@ namespace Calculator
 
         private void ChangePositiveNegativeButton_Click(object sender, EventArgs e)
         {
-            if (InputAndAnswerTextBox.Text != "")
-            {
-                var tempNum = double.Parse(InputAndAnswerTextBox.Text);
-                tempNum *= -1;
-                InputAndAnswerTextBox.Text = tempNum.ToString();
-            }
+            if (InputAndAnswerTextBox.Text == "") return;
+
+            _result = double.Parse(InputAndAnswerTextBox.Text);
+            _result *= -1;
+
+            DisplayResult();
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
-            if (InputAndAnswerTextBox.Text != "")
-            {
-                _number1 = double.Parse(InputAndAnswerTextBox.Text);
-                Button button = (Button)sender;
-                _whatToDo = button.AccessibleName;
+            if (InputAndAnswerTextBox.Text == "") return;
 
-                InputAndAnswerTextBox.Clear();
-            }
+            _number1 = double.Parse(InputAndAnswerTextBox.Text);
+            Button button = (Button)sender;
+            _whatToDo = button.AccessibleName;
+
+            InputAndAnswerTextBox.Clear();
         }
 
         private void DirectCalculateButton_Click(object sender, EventArgs e)
         {
-            if (InputAndAnswerTextBox.Text != "")
-            {
-                _number1 = double.Parse(InputAndAnswerTextBox.Text);
-                Button button = (Button)sender;
-                _result = button.AccessibleName switch
-                {
-                    "Square" => Square(_number1),
-                    "SquareRoot" => SquareRoot(_number1),
-                    _ => _result
-                };
+            if (InputAndAnswerTextBox.Text == "") return;
 
-                InputAndAnswerTextBox.Text = _result.ToString();
-            }
+            _number1 = double.Parse(InputAndAnswerTextBox.Text);
+            Button button = (Button)sender;
+
+            _result = button.AccessibleName switch
+            {
+                "Square" => Square(_number1),
+                "SquareRoot" => SquareRoot(_number1),
+                _ => _result
+            };
+
+            DisplayResult();
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
@@ -97,6 +96,11 @@ namespace Calculator
                 _ => _result
             };
 
+            DisplayResult();
+        }
+
+        private void DisplayResult()
+        {
             InputAndAnswerTextBox.Text = _result.ToString();
         }
     }

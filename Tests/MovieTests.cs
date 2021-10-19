@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using MovieDatabase;
 using Xunit;
 
@@ -18,6 +19,7 @@ namespace Tests
                 "Black Widow",
                 "Avengers: Infinity War"
             };
+
         [Fact]
         public void Test_CreateMovie()
         {
@@ -105,6 +107,19 @@ namespace Tests
             {
                 Assert.Null(movie.Genre);
             }
+        }
+
+        [Fact]
+        public void Test_SynopsisRegister()
+        {
+            Movie movie = new Movie(_movieNames[0], DateTime.Today)
+            {
+                Synopsis = "All hell breaks loose. Time travel and shits!"
+            };
+
+            string synopsis = movie.Synopsis;
+
+            Assert.Equal("All hell breaks loose. Time travel and shits!", synopsis);
         }
     }
 }
