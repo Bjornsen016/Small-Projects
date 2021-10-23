@@ -12,10 +12,10 @@ using RockPaperScissors;
 
 namespace RockPaperScissors
 {
-    public partial class Form1 : Form
+    public partial class RockPaperScissorsWindow : Form
     {
         private Logic _gameLogic;
-        public Form1()
+        public RockPaperScissorsWindow()
         {
             InitializeComponent();
             _gameLogic = new Logic();
@@ -29,9 +29,9 @@ namespace RockPaperScissors
             _gameLogic.Choose(button.Text);
             _gameLogic.Play();
             PlayerChoiceText.Text = _gameLogic._playerChoice;
-            await PutTaskDelay(250);
+            await PutTaskDelay(300);
             ComputerChoiceText.Text = _gameLogic._computerChoice;
-            await PutTaskDelay(250);
+            await PutTaskDelay(300);
             WinLoseOrTieText.Text = _gameLogic._outcome;
             UpdateScoreboard();
             UpdateRecentGames();

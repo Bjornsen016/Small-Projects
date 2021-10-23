@@ -1,7 +1,7 @@
 ﻿
 namespace RockPaperScissors
 {
-    partial class Form1
+    partial class RockPaperScissorsWindow
     {
         /// <summary>
         ///  Required designer variable.
@@ -176,7 +176,7 @@ namespace RockPaperScissors
             this.ComputerScore.TabIndex = 12;
             this.ComputerScore.Text = "0";
             // 
-            // Form1
+            // RockPaperScissorsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,8 +194,8 @@ namespace RockPaperScissors
             this.Controls.Add(this.PaperButton);
             this.Controls.Add(this.WinLoseOrTieText);
             this.Controls.Add(this.ChooseRock);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "RockPaperScissorsWindow";
+            this.Text = "Rock Paper Scissors";
             this.ResumeLayout(false);
             this.PerformLayout();
 
