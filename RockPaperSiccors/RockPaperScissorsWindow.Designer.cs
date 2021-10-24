@@ -42,6 +42,7 @@ namespace RockPaperScissors
             this.PlayerScoreHeading = new System.Windows.Forms.Label();
             this.PlayerScore = new System.Windows.Forms.Label();
             this.ComputerScore = new System.Windows.Forms.Label();
+            this.RestartGameButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ChooseRock
@@ -176,11 +177,22 @@ namespace RockPaperScissors
             this.ComputerScore.TabIndex = 12;
             this.ComputerScore.Text = "0";
             // 
+            // RestartGameButton
+            // 
+            this.RestartGameButton.Location = new System.Drawing.Point(-2, 1);
+            this.RestartGameButton.Name = "RestartGameButton";
+            this.RestartGameButton.Size = new System.Drawing.Size(91, 23);
+            this.RestartGameButton.TabIndex = 13;
+            this.RestartGameButton.Text = "Restart Game";
+            this.RestartGameButton.UseVisualStyleBackColor = true;
+            this.RestartGameButton.Click += new System.EventHandler(this.RestartGameButton_Click);
+            // 
             // RockPaperScissorsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 450);
+            this.Controls.Add(this.RestartGameButton);
             this.Controls.Add(this.ComputerScore);
             this.Controls.Add(this.PlayerScore);
             this.Controls.Add(this.RecentGames);
@@ -216,6 +228,7 @@ namespace RockPaperScissors
         private System.Windows.Forms.Label PlayerScoreHeading;
         private System.Windows.Forms.Label PlayerScore;
         private System.Windows.Forms.Label ComputerScore;
+        private System.Windows.Forms.Button RestartGameButton;
     }
 }
 

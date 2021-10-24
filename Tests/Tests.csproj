@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MovieDatabase\MovieDatabase.csproj" />
+    <ProjectReference Include="..\PomodoroLogic\PomodoroLogic.csproj" />
   </ItemGroup>
 
 </Project>

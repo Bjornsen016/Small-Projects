@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RockPaperScissors;
 
 namespace RockPaperScissors
 {
@@ -19,6 +11,13 @@ namespace RockPaperScissors
         {
             InitializeComponent();
             _gameLogic = new Logic();
+        }
+
+        private void RestartGame()
+        {
+            RockPaperScissorsWindow newForm = new RockPaperScissorsWindow();
+            newForm.Show();
+            this.Dispose(false);
         }
 
         private async void Choose_Click(object sender, EventArgs e)
@@ -66,6 +65,11 @@ namespace RockPaperScissors
             {
                 RecentGames.AppendText(Environment.NewLine + _gameLogic._outcome);
             }
+        }
+
+        private void RestartGameButton_Click(object sender, EventArgs e)
+        {
+            RestartGame();
         }
     }
 }
